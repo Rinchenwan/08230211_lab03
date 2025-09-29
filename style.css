@@ -1,0 +1,910 @@
+/* Reset */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f5fc;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Topbar */
+.topbar {
+  background: #3a1654;
+  padding: 8px 0;
+}
+.topbar .nav-links {
+  list-style: none;
+  text-align: center;
+}
+.topbar .nav-links li {
+  display: inline;
+  margin: 0 12px;
+}
+.topbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+.topbar .nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Main Navigation */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #4b1f70;
+  padding: 20px;
+}
+.logo-container {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.logo {
+  width: 130px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.nav-section {
+  flex: 1 1 150px;
+  margin: 10px;
+  text-align: center;
+}
+.nav-section a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.nav-section p {
+  font-size: 13px;
+  color: #ddd;
+}
+.btn-red {
+  background: #e74c3c;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.btn-red:hover {
+  background: #ff6f61;
+}
+
+/* Banner */
+.banner {
+  background: #7b3fb4;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(39, 21, 141);
+}
+
+/* Main Content */
+.main-content {
+  padding: 30px;
+  text-align: center;
+}
+.main-content h2 {
+  color: #5a2d82;
+  margin-bottom: 10px;
+}
+.main-content p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background: #3a1654;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-section {
+    flex: 1 1 100%;
+  }
+}
+
+/* Education Page Items - Vertical with slight stagger */
+.edu-item {
+  display: block;               /* stack vertically */
+  margin: 15px 0;
+  position: relative;
+}
+
+.edu-item:nth-child(odd) {
+  left: 10px;                   /* slight right shift */
+}
+
+.edu-item:nth-child(even) {
+  left: -10px;                  /* slight left shift */
+}
+
+.edu-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.edu-item p {
+  display: inline-block;        /* keep text next to image */
+  margin: 0;
+}
+
+/* Page Background */
+body {
+  background-color: #ffc0cb;  /* light pink */
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Banner - optional darker pink for contrast */
+.banner {
+  background-color: #ff69b4;  /* hot pink */
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(128, 20, 92);
+}
+
+
+/* Moving Education Title */
+.banner {
+  background-color: #ff69b4; /* hot pink */
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner h1 {
+  display: inline-block;
+  position: relative;
+  animation: moveTitle 5s linear infinite;
+}
+
+@keyframes moveTitle {
+  0% {
+    left: -100%; /* start outside left */
+  }
+  50% {
+    left: 50%;  /* middle of screen */
+    transform: translateX(-50%);
+  }
+  100% {
+    left: 100%; /* move outside right */
+  }
+}
+
+/* Education Section - Aesthetic School Names */
+.edu-item p {
+  display: inline-block;
+  margin: 0;
+  font-size: 16px;               /* slightly bigger for emphasis */
+  font-family: 'Georgia', serif; /* elegant serif font */
+  color: #4b1f70;                /* dark purple matching theme */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #fff; /* subtle shadow for depth */
+}
+
+/* Add a small graduation icon before each school */
+.edu-item::before {
+  content: "🎓"; /* graduation cap emoji */
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.edu-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  /* add transition */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.edu-item img:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+/* Page Background */
+body {
+  background-color: #ffe6f0; /* light pink background */
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Topbar */
+.topbar {
+  background: #3a1654;
+  padding: 8px 0;
+}
+.topbar .nav-links {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.topbar .nav-links li {
+  display: inline;
+  margin: 0 12px;
+}
+.topbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+.topbar .nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(90deg, #ff69b4, #7b3fb4);
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Skills List */
+.main-content ul {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.main-content li {
+  background: #4b1f70;
+  color: white;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  position: relative;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Add hover effect */
+.main-content li:hover {
+  background: #ff69b4;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Optional: Add icon before each skill */
+.main-content li::before {
+  content: "✔️";
+  margin-right: 10px;
+}
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background: #fce4f3; /* light pink background */
+  color: #333;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Topbar */
+.topbar {
+  background: #3a1654;
+  padding: 8px 0;
+}
+.topbar .nav-links {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.topbar .nav-links li {
+  display: inline;
+  margin: 0 12px;
+}
+.topbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+.topbar .nav-links a:hover {
+  color: #4e1a3a;
+}
+
+/* Main Navigation */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #4b1f70;
+  padding: 20px;
+}
+.logo-container {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.logo {
+  width: 100px;   /* adjust the width */
+  height: auto;   /* keeps aspect ratio */
+  border-radius: 9px;  /* keeps it rectangle with slightly rounded corners */
+  border: 3px solid #fff; /* optional border */
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2); /* adds a soft shadow */
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+.nav-section {
+  flex: 1 1 150px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+.nav-section:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.nav-section a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.nav-section p {
+  font-size: 13px;
+  color: #ddd;
+}
+.btn-red {
+  background: #e74c3c;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.btn-red:hover {
+  background: #ff6f61;
+}
+
+/* Banner with gradient and animation */
+.banner {
+  background: linear-gradient(90deg, #ff69b4, #7b3fb4);
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: bannerSlide 2s ease-out;
+}
+
+@keyframes bannerSlide {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Main Content fade-in */
+.main-content {
+  padding: 30px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s;
+}
+
+.main-content h2 {
+  color: #5a2d82;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+  background: #3a1654;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* Profile / Home Page Image */
+.logo {
+  width: 50px;        /* smaller width */
+  height: 50px;       /* smaller height */
+  border-radius: 10px; /* rectangle with slightly rounded corners */
+  border: 2px solid #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  object-fit: cover;    /* maintain aspect ratio */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+
+/* Optional: add subtle glow */
+.logo::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255,182,193,0.6); /* soft pink glow */
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* Logo container as flex to align images horizontally */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between images */
+  margin-bottom: 15px;
+  flex-wrap: wrap; /* ensures it wraps on smaller screens */
+}
+
+
+/* Logo / Profile Image Styling */
+.logo, .second-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;                  /* circular images */
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.logo:hover, .second-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* Hero Section: images + text side by side */
+.hero-section {
+  display: flex;
+  align-items: center;       /* vertical alignment */
+  justify-content: center;   /* center horizontally */
+  gap: 20px;                 /* space between images and text */
+  flex-wrap: wrap;           /* wrap on smaller screens */
+  margin: 20px;
+}
+
+/* Logo styling */
+.logo, .second-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.logo:hover, .second-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* About Page Styling */
+.main-content {
+  max-width: 800px;      /* keeps text in a nice readable width */
+  margin: 40px auto;     /* centers the content */
+  padding: 20px;
+  font-family: "Georgia", serif;  /* elegant font */
+  font-size: 12px;       /* smaller font size */
+  line-height: 1.5;      /* more spacing between lines */
+  color: #444;           /* soft dark gray text */
+  text-align: justify;   /* neat alignment */
+  background: #fff0f6;   /* very soft pink background */
+  border-radius: 12px;   /* rounded edges */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+/* Paragraph Styling */
+.main-content p {
+  margin-bottom: 11px;  /* spacing between paragraphs */
+}
+
+/* Highlighted name */
+.main-content strong {
+  font-size: 12px;
+  color: #7b3fb4;      /* purple highlight */
+  font-family: "Palatino Linotype", serif;
+}
+
+/* Profile Image */
+.main-content img.logo {
+  width: 100px;           /* bigger width */
+  height: auto;           /* keeps natural proportion */
+  border-radius: 5%px;    /* slight rounding on corners */
+  border: 3px solid #7b3fb4;
+  display: block;
+  margin: 0 auto 20px;    /* center image with spacing below */
+}
+
+.tasheylha-title {
+  font-family: "Georgia", serif;
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #6a0dad, #c71585, #ff4500); /* purple → pink → orange-red */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorMove 4s linear infinite;
+  margin-left: 15px; /* spacing from image */
+}
+
+@keyframes colorMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
+.skills-grid {
+  display: flex;              /* horizontal row */
+  justify-content: center;    /* center all items */
+  gap: 20px;                  /* space between images */
+  flex-wrap: wrap;            /* wrap to next line if screen is small */
+  margin-top: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;     /* text under image */
+  align-items: center;
+  width: 100px;               /* fixed width for uniformity */
+}
+
+.skill-item img {
+  width: 60px;                /* small image */
+  height: 60px;
+  border-radius: 10px;        /* optional slight rounding */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.skill-item img:hover {
+  transform: scale(1.1);      /* slight zoom on hover */
+}
+
+.skill-item p {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4b1f70;            /* your theme color */
+}
+
+/* Base font size for the whole site */
+body {
+  font-size: 9px; /* smaller overall font */
+  font-family: Arial, sans-serif; /* keep it readable */
+  line-height: 1.5; /* comfortable spacing */
+}
+
+/* Headings */
+h1 {
+  font-size: 12px; /* smaller than default */
+}
+h2 {
+  font-size: 10px;
+}
+h3 {
+  font-size: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 9px; /* smaller paragraphs */
+}
+
+/* Navigation links */
+.nav-links a {
+  font-size: 9px;
+}
+
+/* Education school names */
+.edu-item p {
+  font-size: 12px; /* slightly smaller than before */
+}
+
+/* Skills text */
+.skill-item p {
+  font-size: 10px;
+}
+
+/* General body padding */
+body {
+  padding: 15px; /* medium padding around the whole page */
+}
+
+/* Topbar */
+.topbar {
+  padding: 10px 0; /* medium vertical padding */
+}
+
+/* Main Navigation Section */
+.main-nav {
+  padding: 15px 20px; /* medium padding inside the nav container */
+}
+
+/* Banner */
+.banner {
+  padding: 15px; /* medium padding for the banner */
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px; /* medium padding around main content */
+}
+
+/* Footer */
+footer {
+  padding: 15px; /* medium padding for footer */
+}
+
+/* Skill items / Education items spacing */
+.skill-item, .edu-item {
+  padding: 10px; /* medium padding inside cards/items */
+}
+
+
+/* Education Items Layout */
+.edu-item {
+  display: flex;               /* places image and text side by side */
+  align-items: center;         /* vertically align text with image */
+  margin: 15px 0;              /* space between items */
+}
+
+/* Text beside Education images */
+.edu-item p {
+  font-size: 12px;        /* smaller text */
+  color: #444;            /* softer dark gray for elegance */
+  margin: 0;
+  line-height: 1.4;       /* better readability */
+}
+/* Education item container */
+.edu-item {
+  display: flex;
+  align-items: center;   /* vertically center image + text */
+  gap: 15px;             /* space between image and text */
+  margin-bottom: 15px;
+}
+
+/* Education images */
+.edu-item img {
+  width: 80px;           /* adjust this size */
+  height: auto;          /* keeps proportions */
+  border-radius: 8px;    /* smooth corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* soft shadow */
+}
+
+/* Education item container */
+.edu-item {
+  display: flex;
+  align-items: center;   /* vertically center image + text */
+  gap: 20px;             /* more space between image and text */
+  margin-bottom: 20px;
+}
+
+/* Text beside the image */
+.edu-item p {
+  font-size: 13px;       /* smaller text */
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Education Section - Card Style */
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;              /* keeps it centered and neat */
+  background: #66153e;              /* clean white background */
+  border: 2px solid #5a103e;     /* soft purple border */
+  border-radius: 12px;           /* smooth rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* soft shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.edu-item:hover {
+  transform: translateY(-5px);   /* lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Images inside card */
+.edu-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #8342e6;     /* matching border for image */
+}
+
+/* Text inside card */
+.edu-item p {
+  font-size: 14px;
+  color: #4b1f70;                /* elegant purple */
+  font-family: 'Georgia', serif; /* classy font */
+  margin: 0;
+}
+/* Education Section - Compact Card Style */
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;                        /* smaller gap */
+  margin: 12px auto;                /* less margin between cards */
+  padding: 10px;                    /* compact padding */
+  max-width: 500px;                 /* slightly smaller width */
+  background: #8a154f;
+  border: 1.5px solid #6725a5;      /* softer thin border */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.edu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Images inside card */
+.edu-item img {
+  width: 70px;                      /* smaller image */
+  height: auto;
+  border-radius: 6px;
+  border: 1.5px solid #c9a9f5;
+}
+
+/* Text inside card */
+.edu-item p {
+  font-size: 5px;                  /* smaller text size */
+  color: #4b1f70;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+/* --- Force compact education cards & text --- */
+/* Place this at the very end of style.css (or inside <head> of education.html) */
+
+.section .edu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px auto;
+  padding: 8px;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.section .edu-item img {
+  width: 72px !important;       /* small image width */
+  max-width: 72px !important;
+  height: auto !important;
+  object-fit: cover;
+  border-radius: 6px !important;
+  border: 1px solid #e8d8ff !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08) !important;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.section .edu-item p {
+  font-size: 12px !important;   /* small readable text */
+  line-height: 1.35 !important;
+  margin: 0 !important;
+  color: #3b2350;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* optional: reduce overall page base font to keep proportions */
+body, .main-content, .section {
+  font-size: 13px;
+}
+
+/* hover effect (optional) */
+.section .edu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Education Section - Match Skills Style */
+.edu-item p {
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;               /* smaller, same as skills */
+  font-family: Arial, sans-serif; /* same font as skills */
+  color: #4b1f70;                /* keep theme color */
+  font-weight: normal;           /* lighter, not too bold */
+  text-shadow: none;             /* remove heavy shadow */
+  line-height: 1.5;              /* spacing like skills */
+}
+
+/* Education Grid (same style idea as skills) */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  background: #fdeeff; /* soft pastel background */
+}
+
+/* Each Education Card */
+.edu-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 220px;
+}
+
+.edu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
